@@ -108,6 +108,10 @@ Control the Bebop Drone using the xbox joystick
         
         sudo jstest /dev/input/js0 
         
+   **Your screen should look like this:**
+   ![Screenshot from 2022-04-12 16-55-57](https://user-images.githubusercontent.com/103221005/163067891-cb53de4f-c312-4d28-8e78-56a5b416456b.png)
+
+        
    **We will navigate to the xbox360.yaml file. This file includes the mapping of buttons, and the actions the drone will do**
    
         cd ~/catkin_ws_bebop/src

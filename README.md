@@ -25,11 +25,11 @@ Control the Bebop Drone using the xbox joystick
   
 **Downloading bebop autonomy**
 
-     cd ~/catkin_ws_bebop/src
+    cd ~/catkin_ws_bebop/src
     git clone https://github.com/autonomylab/bebop_autonomy.git
     cd bebop_autonomy
-     cd bebop_driver
-     cd src
+    cd bebop_driver
+    cd src
   
   **Open bebop video decoder file**
   

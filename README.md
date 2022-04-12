@@ -128,7 +128,7 @@ Control the Bebop Drone using the xbox joystick
         cd ~/catkin_ws_bebop/src/bebop_autonomy/bebop_tools/launch
         roslaunch joy_teleop.launch
         
-   **The controller is now connected to the drone, open a new tab and open the controller test for reference:"
+   **The controller is now connected to the drone, open a new tab and open the controller test for reference:**
     
           sudo jstest /dev/input/js0 
           

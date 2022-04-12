@@ -23,7 +23,7 @@ Control the Bebop Drone using the xbox joystick
     cd ~/catkin_ws_bebop/
     catkin_make
   
-**Downloading bebop autonomy**
+**Download the bebop autonomy package:**
 
     cd ~/catkin_ws_bebop/src
     git clone https://github.com/autonomylab/bebop_autonomy.git
@@ -31,17 +31,19 @@ Control the Bebop Drone using the xbox joystick
     cd bebop_driver
     cd src
   
-  **Open bebop video decoder file**
+  **Open bebop video decoder file:**
   
     gedit bebop_video_decoder.cpp
   
   **We will have to make some changes**
   
-  **Modify: line 93: CODEC_CAP_TRUNCATED   into   AV_CODEC_CAP_TRUNCATED**
+  **Modify:**
   
-   **line 95: CODEC_FLAG_TRUNCATED   into    AV_CODEC_FLAG_TRUNCATED**
+   **line 93: CODEC_CAP_TRUNCATED  --->  AV_CODEC_CAP_TRUNCATED**
+  
+   **line 95: CODEC_FLAG_TRUNCATED  --->  AV_CODEC_FLAG_TRUNCATED**
             
-   **line 97: CODEC_FLAG2_CHUNKS   into   AV_CODEC_FLAG2_CHUNKS**
+   **line 97: CODEC_FLAG2_CHUNKS  --->  AV_CODEC_FLAG2_CHUNKS**
    
    
    **Install joystick teleoperation packages:**

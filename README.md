@@ -66,7 +66,7 @@ Control the Bebop Drone using the xbox joystick
       
       catkin_make
      
-   **If an error is produced after "catkin_make", running it again will solve it**
+   **If an error is produced after building the workspace with "catkin_make", running it again will solve it**
    
    **Since we are running with the catkin workspace, we must source it:**
    

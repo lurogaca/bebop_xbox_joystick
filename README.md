@@ -121,7 +121,7 @@ Control the Bebop Drone using the xbox joystick
   **Open a new tab. You will now have access to the drone's video footage.**
   **We are allowed to source the Bash due to the changes made to it from earlier:**
   
-            source ~/.bashrc
+        source ~/.bashrc
             
   **Navigate to the joy-teleop launch file and launch it:**
   

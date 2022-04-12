@@ -16,19 +16,29 @@ Control the Bebop Drone using the xbox joystick
 **Download parrot wrapper:**
 
     git clone https://github.com/antonellabarisic/parrot_arsdk.git
+    
     cd parrot_arsdk
+    
     git checkout noetic_dev
+    
     sudo apt-get install libavahi-client-dev
+    
     sudo ln -s /usr/bin/python3
+    
     cd ~/catkin_ws_bebop/
+    
     catkin_make
   
 **Download the bebop autonomy package:**
 
     cd ~/catkin_ws_bebop/src
+    
     git clone https://github.com/autonomylab/bebop_autonomy.git
+    
     cd bebop_autonomy
+    
     cd bebop_driver
+    
     cd src
   
   **Open bebop video decoder file:**
@@ -49,8 +59,11 @@ Control the Bebop Drone using the xbox joystick
    **Install joystick teleoperation packages:**
    
       cd ~/catkin_ws_bebop/
+      
       sudo apt install ros-noetic-joy ros-noetic-joy-teleop ros-noetic-teleop-twist-joy
+      
       cd ~/catkin_ws_bebop/
+      
       catkin_make
      
    **If an error is produced after "catkin_make", running it again will solve it**
@@ -72,6 +85,7 @@ Control the Bebop Drone using the xbox joystick
    **Establish a connection with the drone:**
    
         cd catkin_ws_bebop
+        
         roslaunch bebop_tools bebop_nodelet_iv.launch 
         
    **You will now see a video feed of the drone appear on your screen, open a new window, then source it:**
@@ -97,9 +111,13 @@ Control the Bebop Drone using the xbox joystick
    **We will navigate to the xbox360.yaml file. This file includes the mapping of buttons, and the actions the drone will do**
    
         cd ~/catkin_ws_bebop/src
+        
         cd bebop_autonomy
+        
         cd bebop_tools
+        
         cd config
+        
         gedit xbox360.yaml
         
   **Please take notes on these commands, and have them handy for when you use the drone. Pay attention to the "deadman" buttons. The deadman button acts like a safety switch. The deadman buttons correlate to the buttons on the controller. You will not be able to make the drone flip, for example, without having their deadman buttons engaged. NOTE:RB must be engaged to pilot**
@@ -128,6 +146,7 @@ Control the Bebop Drone using the xbox joystick
   **Navigate to the joy-teleop launch file and launch it:**
   
         cd ~/catkin_ws_bebop/src/bebop_autonomy/bebop_tools/launch
+        
         roslaunch joy_teleop.launch
         
    **The controller is now connected to the drone, open a new tab and open the controller test for reference:**

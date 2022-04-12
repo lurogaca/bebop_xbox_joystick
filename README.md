@@ -1,7 +1,7 @@
 # bebop_xbox_joystick
 Control the Bebop Drone using the xbox joystick
 
-**A good tip is to have ROS running in the background whenever you work**
+**A good tip is to always have ROS running in the background whenever you work.**
 
     
 

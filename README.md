@@ -112,3 +112,26 @@ Control the Bebop Drone using the xbox joystick
   
         rosrun nodelet nodelet manager_name:=nodelet_manager
         
+        cd ~/catkin_ws_bebop/src
+        
+  **Turn the drone on, and connect to its wifi. Run the nodelet:**
+  
+        roslaunch bebop_tools bebop_nodelet_iv.launch
+        
+  **Open a new tab. You will now have access to the drone's video footage.**
+  **We are allowed to source the Bash due to the changes made to it from earlier:**
+  
+            source ~/.bashrc
+            
+  **Navigate to the joy-teleop launch file and launch it:**
+  
+        cd ~/catkin_ws_bebop/src/bebop_autonomy/bebop_tools/launch
+        roslaunch joy_teleop.launch
+        
+   **The controller is now connected to the drone, open a new tab and open the controller test for reference:"
+    
+          sudo jstest /dev/input/js0 
+          
+   **You are now ready to pilot the drone!**
+  
+        

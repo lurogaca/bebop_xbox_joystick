@@ -100,7 +100,7 @@ Control the Bebop Drone using the xbox joystick
         cd config
         gedit xbox360.yaml
         
-  **Please take notes of these actions, and have them handy for when you use the drone. Pay attention to the "deadman" buttons. The deadman button acts like a safety switch. The deadman buttons correlate to the buttons on the controller. You will not be able to make the drone flip, for example, without having their deadman buttons engaged. RB must be engaged to pilot**
+  **Please take notes on these commands, and have them handy for when you use the drone. Pay attention to the "deadman" buttons. The deadman button acts like a safety switch. The deadman buttons correlate to the buttons on the controller. You will not be able to make the drone flip, for example, without having their deadman buttons engaged. RB must be engaged to pilot**
         
  **It is now time to teleoperate the Bebop**
  

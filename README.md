@@ -49,11 +49,11 @@ Control the Bebop Drone using the xbox joystick
   
   **Modify:**
   
-   **line 93: CODEC_CAP_TRUNCATED  --->  AV_CODEC_CAP_TRUNCATED**
+   **in line 93: replace CODEC_CAP_TRUNCATED with AV_CODEC_CAP_TRUNCATED**
   
-   **line 95: CODEC_FLAG_TRUNCATED  --->  AV_CODEC_FLAG_TRUNCATED**
+   **in line 95: replace CODEC_FLAG_TRUNCATED  with  AV_CODEC_FLAG_TRUNCATED**
             
-   **line 97: CODEC_FLAG2_CHUNKS  --->  AV_CODEC_FLAG2_CHUNKS**
+   **in line 97: replace CODEC_FLAG2_CHUNKS  with  AV_CODEC_FLAG2_CHUNKS**
    
    
    **Add this line in your ~/.bashrc:** 

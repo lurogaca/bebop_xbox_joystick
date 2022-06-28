@@ -55,10 +55,11 @@ Control the Bebop Drone using the xbox joystick
             
    **line 97: CODEC_FLAG2_CHUNKS  --->  AV_CODEC_FLAG2_CHUNKS**
    
+   
    **Add this line in your ~/.bashrc:** 
    
    
-   export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:<path_to_your_catkin_ws>/devel/lib/parrot_arsdk
+      export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:<path_to_your_catkin_ws>/devel/lib/parrot_arsdk
    
    
    **Install joystick teleoperation packages:**

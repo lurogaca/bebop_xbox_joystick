@@ -56,12 +56,12 @@ Control the Bebop Drone using the xbox joystick
    **in line 97: replace CODEC_FLAG2_CHUNKS  with  AV_CODEC_FLAG2_CHUNKS**
    
    
-   **Add this line in your ~/.bashrc:** 
+   **Add these lines in your ~/.bashrc:** 
    
-   
-      export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:<path_to_your_catkin_ws>/devel/lib/parrot_arsdk
-   
-   
+        export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/<path_to_your_catkin_ws>/devel/lib/parrot_arsdk/
+        export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/<path_to_your_catkin_ws>/devel/lib/
+      
+      
    **Install joystick teleoperation packages:**
    
       cd ~/catkin_ws_bebop/
@@ -153,7 +153,16 @@ Control the Bebop Drone using the xbox joystick
   
         source ~/.bashrc
             
-  **Navigate to the joy-teleop launch file and launch it:**
+  **Navigate to the joy-teleop launch file, open it usnig gedit, and make sure that the default parameterin line is set to xbox360
+  
+  
+        <arg name="joy_config" default="xbox360" />
+  
+  
+
+  
+  
+  **Now launch the node:**
   
         cd ~/catkin_ws_bebop/src/bebop_autonomy/bebop_tools/launch
         

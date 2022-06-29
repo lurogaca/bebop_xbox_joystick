@@ -153,14 +153,15 @@ Control the Bebop Drone using the xbox joystick
   
         source ~/.bashrc
             
-  **Navigate to the joy-teleop launch file, open it usnig gedit, and make sure that the default parameterin line is set to xbox360
+  **Navigate to the joy-teleop launch file, located under
   
-  
-        <arg name="joy_config" default="xbox360" />
-  
-  
+        /bebop_autonomy/bebop_tools/launch
 
+**Open the launcher using gedit, and make sure that the default parameterin line is set to xbox360
   
+          <arg name="joy_config" default="xbox360" />
+  
+    
   
   **Now launch the node:**
   

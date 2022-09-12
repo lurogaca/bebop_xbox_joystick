@@ -59,7 +59,6 @@ Control the Bebop Drone using the xbox joystick
    **Add these lines in your ~/.bashrc:** 
    
         export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/<path_to_your_catkin_ws>/devel/lib/parrot_arsdk/
-        export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/<path_to_your_catkin_ws>/devel/lib/
       
       
    **Install joystick teleoperation packages:**
